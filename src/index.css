@@ -1,0 +1,130 @@
+@import 'tailwindcss';
+
+/*
+Blue 600: hsl(231, 69%, 60%)
+- Red 400: hsl(0, 94%, 66%)
+
+### Neutral
+
+- Grey 50: hsl(0, 0%, 97%)
+- Blue 950: hsl(229, 31%, 21%)
+
+- Font size: 18px
+
+- Family: [Rubik](https://fonts.google.com/specimen/Rubik)
+- Weights: 400, 500
+*/
+.btn {
+    @apply text-lg rounded scale-95 cursor-pointer border-2 py-3 px-5 active:scale-90  hover:bg-white text-white transition-all;
+}
+.btn-blue {
+    @apply bg-blue-600 border-white  hover:text-blue-600 hover:border-blue-600;
+}
+.btn-red {
+    @apply bg-red-400 border-blue-600 hover:text-red-400 hover:border-red-400;
+}
+
+.active {
+    animation: fadeIn .5s forwards;
+    transition: all .5s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.rotate-up {
+    animation: up .5s forwards;
+    transition: all .3s;
+}
+@keyframes up {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+        filter: invert(10%) brightness(130%) hue-rotate(110deg) saturate(100%) ;
+    }
+}
+.rotate-down {
+    animation: down .5s forwards;
+    transition: all .3s;
+}
+@keyframes down {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.close {
+    animation: close .5s forwards;
+}
+@keyframes close {
+    from {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    to {
+        display: none;
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
+.open {
+    animation: open 1s forwards;
+}
+@keyframes open {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        display: inline-block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.x:hover h3 {
+    color: #d33e3e;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+
+.card-1 {
+    margin-top: 4rem;
+}
+.card-2 {
+    margin-top: 8rem;
+}
+
+.ac-tive {
+    position: relative;
+    color: #00002f;
+}
+.ac-tive::after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 3px;
+    background: #e34848;
+    bottom: -90%;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    transform-origin: center;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+.in-active::after {
+    opacity: 0;
+    transform: translateX(-50%) scale(0);
+}
