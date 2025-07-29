@@ -1,4 +1,4 @@
-import  { Navlinks } from "./components/Footer.jsx";
+import  { Navlinks } from "./Footer.jsx";
 
 const Header = () => {
     return (

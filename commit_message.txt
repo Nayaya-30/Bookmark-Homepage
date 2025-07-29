@@ -1,0 +1,11 @@
+fix: correct import path in Header and adjust FAQ button margin
+
+- Fix import path in Header.jsx from "./components/Footer.jsx" to "./Footer.jsx"
+- Adjust button margin in FAQ.jsx from mt-4 to my-8 for better spacing
+- Add comprehensive task list in docs/tasks.md for project improvements
+- Add placeholder for project guidelines in .junie/guidelines.md
+- Create X.jsx component as alternative implementation of FAQ (untracked)
+
+This commit addresses issues with the Header component's imports and
+improves the UI spacing in the FAQ section. It also adds documentation
+for future development tasks and project guidelines.

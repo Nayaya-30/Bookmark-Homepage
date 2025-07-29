@@ -30,7 +30,7 @@ const FAQ = () => {
                 ))}
             </article>
 
-            <Button text={'More Info'} type={'submit'} className={'btn mt-4 btn-blue'} />
+            <Button text={'More Info'} type={'submit'} className={'btn my-8 btn-blue'} />
         </section>
     )
 }
