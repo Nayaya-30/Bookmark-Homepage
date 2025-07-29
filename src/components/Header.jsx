@@ -2,7 +2,7 @@ import  { Navlinks } from "./Footer.jsx";
 
 const Header = () => {
     return (
-        <header className={''}>
+        <header className={'py-8 w-full bg-grey-500'}>
             <nav className={'flex flex-row justify-between items-center px-30'}>
                 <img src={'/images/bookmark.svg'} alt={'Logo'}/>
                 <ul className={'flex flex-row items-center gap-12'}>
@@ -18,8 +18,23 @@ const Header = () => {
                 </ul>
             </nav>
 
-            <article className={''}>
-                
+            <article className={'flex flex-row items-center justify-between px-30 py-26'}>
+                <section className={'flex flex-col gap-8 w-[40%]'}>
+                    <h1 className={'text-5xl font-medium text-blue-950'}>A Simple Bookmark Manager</h1>
+                    <p className={'text-gray-400'}>A clean and simple interface to organize your favourite websites.
+                        Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                    <div className="flex flex-row gap-6">
+                        <button className="btn btn-blue">
+                            Get it on Chrome
+                        </button>
+                        <button className="btn btn-blue">
+                            Get it on Firefox
+                        </button>
+                    </div>
+                </section>
+                <div className={'w-[45%]'}>
+                    <img src={'/images/illustration-hero.svg'} alt={'illustration'} className={'w-full'}/>
+                </div>
             </article>
         </header>
     )

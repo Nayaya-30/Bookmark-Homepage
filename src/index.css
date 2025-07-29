@@ -15,7 +15,7 @@ Blue 600: hsl(231, 69%, 60%)
 - Weights: 400, 500
 */
 .btn {
-    @apply text-lg rounded scale-95 cursor-pointer border-2 py-3 px-5 active:scale-90  hover:bg-white text-white transition-all;
+    @apply text-lg rounded scale-95 cursor-pointer hover:shadow border-2 py-3 px-5 active:scale-90  hover:bg-white text-white transition-all;
 }
 .btn-blue {
     @apply bg-blue-600 border-white  hover:text-blue-600 hover:border-blue-600;
